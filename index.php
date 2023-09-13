@@ -18,7 +18,7 @@ $worker->onMessage = function(TcpConnection $connection, $data)
     $param = new \Workerman\Protocols\Http\Request($data);
     /** 自定义成功回调 */
     $success = function (\Workerman\Protocols\Http\Request $request)use($connection){
-      //echo $request->rawBody();
+       echo $request->rawBody();
        $response =  new \Workerman\Protocols\Http\Response(200,$request->header(),$request->rawBody());
        $connection->send($response);
     };
@@ -33,8 +33,8 @@ $worker->onMessage = function(TcpConnection $connection, $data)
     $content = file_get_contents(__DIR__.'/index.html');
     /** 构建一个响应 */
     $response = new \Workerman\Protocols\Http\Response(200,$param->header(),$content);
-    /** 投递了异步请求任务后，正常返回数据给浏览器 */
-    //$connection->send($response);
+    /** 投递了异步请求任务后，正常返回数据给浏览器,如果这里返回数据给浏览器了，上面设置的成功或者失败回调发送给浏览器的数据，浏览器是收不到的 */
+    $connection->send($response);
 };
 
 /**

@@ -6,7 +6,7 @@
  ```
 ### 配置
 
-注意修改index.php里面http服务监听的端口，需要请求的服务器ip,host,port,api
+注意修改config.php里面http服务监听的端口，需要请求的服务器ip,host,port,api
 
 ```php
 /** 本地服务器地址 */
