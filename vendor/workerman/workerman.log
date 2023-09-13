@@ -1,0 +1,171 @@
+2023-09-12 18:00:24 pid:1 TypeError: Return value of say() must be of the type string, none returned in E:\yanglong\async\index.php:44
+Stack trace:
+#0 E:\yanglong\async\index.php(14): say(Object(Workerman\Connection\TcpConnection))
+#1 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#2 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #19)
+#3 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#4 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 E:\yanglong\async\index.php(48): Workerman\Worker::runAll()
+#7 {main}
+2023-09-12 18:48:33 pid:1 ArgumentCountError: Too few arguments to function {closure}(), 0 passed in E:\yanglong\async\Say.php on line 18 and exactly 1 expected in E:\yanglong\async\index.php:74
+Stack trace:
+#0 E:\yanglong\async\Say.php(18): {closure}()
+#1 E:\yanglong\async\index.php(85): Say->connect()
+#2 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#3 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#4 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#7 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\yanglong\async\index.php(90): Workerman\Worker::runAll()
+#9 {main}
+2023-09-12 18:51:14 pid:1 ArgumentCountError: Too few arguments to function Say::connect(), 0 passed in E:\yanglong\async\index.php on line 85 and exactly 1 expected in E:\yanglong\async\Say.php:16
+Stack trace:
+#0 E:\yanglong\async\index.php(85): Say->connect()
+#1 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#2 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#3 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#4 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 E:\yanglong\async\index.php(90): Workerman\Worker::runAll()
+#8 {main}
+2023-09-13 10:07:56 pid:1 Error: Call to a member function send() on array in E:\yanglong\async\index.php:76
+Stack trace:
+#0 E:\yanglong\async\Say.php(20): {closure}(Array)
+#1 E:\yanglong\async\index.php(88): Say->connect()
+#2 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#3 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#4 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#7 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\yanglong\async\index.php(93): Workerman\Worker::runAll()
+#9 {main}
+2023-09-13 10:09:06 pid:1 Error: Call to a member function send() on array in E:\yanglong\async\index.php:77
+Stack trace:
+#0 E:\yanglong\async\Say.php(20): {closure}(Array)
+#1 E:\yanglong\async\index.php(89): Say->connect()
+#2 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#3 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#4 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#7 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\yanglong\async\index.php(94): Workerman\Worker::runAll()
+#9 {main}
+2023-09-13 10:09:34 pid:1 TypeError: Argument 1 passed to {closure}() must be an instance of Say, array given, called in E:\yanglong\async\Say.php on line 20 and defined in E:\yanglong\async\index.php:74
+Stack trace:
+#0 E:\yanglong\async\Say.php(20): {closure}(Array)
+#1 E:\yanglong\async\index.php(89): Say->connect()
+#2 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#3 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#4 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#7 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\yanglong\async\index.php(94): Workerman\Worker::runAll()
+#9 {main}
+2023-09-13 10:10:08 pid:1 Error: Call to a member function send() on array in E:\yanglong\async\index.php:77
+Stack trace:
+#0 E:\yanglong\async\Say.php(20): {closure}(Array)
+#1 E:\yanglong\async\index.php(89): Say->connect()
+#2 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#3 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#4 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#7 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\yanglong\async\index.php(94): Workerman\Worker::runAll()
+#9 {main}
+2023-09-13 10:11:19 pid:1 Error: Call to a member function send() on array in E:\yanglong\async\index.php:77
+Stack trace:
+#0 E:\yanglong\async\Say.php(20): {closure}(Array)
+#1 E:\yanglong\async\index.php(89): Say->connect()
+#2 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#3 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#4 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#7 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\yanglong\async\index.php(94): Workerman\Worker::runAll()
+#9 {main}
+2023-09-13 10:12:14 pid:1 Error: Call to a member function send() on array in E:\yanglong\async\index.php:78
+Stack trace:
+#0 E:\yanglong\async\Say.php(20): {closure}(Array)
+#1 E:\yanglong\async\index.php(90): Say->connect()
+#2 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#3 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#4 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#6 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#7 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#8 E:\yanglong\async\index.php(95): Workerman\Worker::runAll()
+#9 {main}
+2023-09-13 10:13:00 pid:1 ArgumentCountError: Too few arguments to function {closure}(), 1 passed in E:\yanglong\async\Say.php on line 34 and exactly 2 expected in E:\yanglong\async\index.php:80
+Stack trace:
+#0 E:\yanglong\async\Say.php(34): {closure}('http://127.0.0....')
+#1 E:\yanglong\async\Say.php(25): Say->message('http://127.0.0....')
+#2 E:\yanglong\async\index.php(77): Say->send('http://127.0.0....')
+#3 E:\yanglong\async\Say.php(20): {closure}(Array)
+#4 E:\yanglong\async\index.php(89): Say->connect()
+#5 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#6 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#7 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#8 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#9 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#10 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#11 E:\yanglong\async\index.php(94): Workerman\Worker::runAll()
+#12 {main}
+2023-09-13 10:14:04 pid:1 ArgumentCountError: Too few arguments to function {closure}(), 1 passed in E:\yanglong\async\Say.php on line 34 and exactly 2 expected in E:\yanglong\async\index.php:80
+Stack trace:
+#0 E:\yanglong\async\Say.php(34): {closure}(Array)
+#1 E:\yanglong\async\Say.php(25): Say->message('http://127.0.0....')
+#2 E:\yanglong\async\index.php(77): Say->send('http://127.0.0....')
+#3 E:\yanglong\async\Say.php(20): {closure}(Array)
+#4 E:\yanglong\async\index.php(89): Say->connect()
+#5 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#6 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#7 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#8 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#9 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#10 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#11 E:\yanglong\async\index.php(94): Workerman\Worker::runAll()
+#12 {main}
+2023-09-13 10:14:36 pid:1 ArgumentCountError: Too few arguments to function {closure}(), 0 passed and exactly 2 expected in E:\yanglong\async\index.php:80
+Stack trace:
+#0 [internal function]: {closure}()
+#1 E:\yanglong\async\Say.php(34): call_user_func(Object(Closure))
+#2 E:\yanglong\async\Say.php(25): Say->message('http://127.0.0....')
+#3 E:\yanglong\async\index.php(77): Say->send('http://127.0.0....')
+#4 E:\yanglong\async\Say.php(20): {closure}(Array)
+#5 E:\yanglong\async\index.php(89): Say->connect()
+#6 E:\yanglong\async\index.php(18): test(Object(Workerman\Connection\TcpConnection))
+#7 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#8 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#9 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#10 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#11 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#12 E:\yanglong\async\index.php(94): Workerman\Worker::runAll()
+#13 {main}
+2023-09-13 11:13:25 pid:1 Error: Call to undefined function 、、test() in E:\yanglong\async\index.php:15
+Stack trace:
+#0 E:\yanglong\async\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), Object(Workerman\Protocols\Http\Request))
+#1 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#2 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#3 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#4 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 E:\yanglong\async\index.php(100): Workerman\Worker::runAll()
+#6 {main}
+2023-09-13 14:50:31 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Exception: 请求超时 in E:\yanglong\async\Say.php:96
+Stack trace:
+#0 E:\yanglong\async\index.php(63): Say->send('GET /api/test/p...')
+#1 E:\yanglong\async\Say.php(63): {closure}(Object(Say))
+#2 E:\yanglong\async\vendor\workerman\workerman\Events\Select.php(321): Say->checkConnection(Resource id #29)
+#3 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#4 E:\yanglong\async\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#5 E:\yanglong\async\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 E:\yanglong\async\index.php(90): Workerman\Worker::runAll()
+#7 {main}
+  thrown in E:\yanglong\async\Say.php on line 96"
